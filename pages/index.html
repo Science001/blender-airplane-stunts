@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airplane Stunts</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class='container'>
+        <img id="airplane-img" src="images/airplane.png" alt="Airplane Image">
+        <div id="intro">
+            <div id="title">
+                <h1>Airplane Stunts</h1>
+                <span>by</span>
+                <p style="font-size: 1.5rem; margin-top: 0;"><a class="social-btn" id="grk"
+                        href="https://www.twitter.com/grktheXplorer" target="_blank">grktheXplorer</a> &
+                    <a id="bala" class="social-btn" href="https://www.twitter.com/balaraman_08" target="_blank">balaraman_08</a>
+                </p>
+            </div>
+            <div id="open-btn">See in 3D</div>
+        </div>
+
+        <model-viewer id="model-viewer" src="/glb/airplane.glb" alt="A 3D model of the airplane in a city" ar exposure=0.9
+        autoplay camera-controls camera-orbit="-135deg 45deg 50%">
+        </model-viewer>
+    </div>
+
+    <!-- Scripts -->
+
+    <!-- Loads <model-viewer> for modern browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+    </script>
+    <!-- Loads <model-viewer> for old browsers like IE11: -->
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+    </script>
+    <!-- Web Components polyfill to support Edge and Firefox < 63 -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
